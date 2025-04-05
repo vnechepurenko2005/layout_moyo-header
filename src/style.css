@@ -1,11 +1,14 @@
+html {
+  --blue-color: #00acdc;
+}
+
 body {
   margin: 0;
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, Helvetica, sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
   font-variation-settings: 'wdth' 100;
-  background-color: #444;
   font-size: 12px;
 }
 
@@ -26,7 +29,7 @@ body {
   height: 40px;
 }
 
-.logo__link img {
+.logo__link [img] {
   width: 100%;
   height: 100%;
   display: block;
@@ -68,12 +71,12 @@ body {
 }
 
 .nav__link:hover {
-  color: #00acdc;
+  color: var(--blue-color);
 }
 
 .nav__link.is-active {
   position: relative;
-  color: #00acdc;
+  color: var(--blue-color);
 }
 
 .nav__link.is-active::after {
@@ -83,6 +86,6 @@ body {
   bottom: 0;
   height: 4px;
   width: 100%;
-  background-color: #00acdc;
+  background-color: var(--blue-color);
   border-radius: 8px;
 }
